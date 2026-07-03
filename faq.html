@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — CouchPilot</title>
+<meta name="description" content="Frequently asked questions about CouchPilot: connection, pairing, wake, network, permissions, Samsung and LG behavior, privacy, multiple TVs, favorites, inputs, and troubleshooting.">
+<meta name="theme-color" content="#070A0F">
+<link rel="canonical" href="https://hugozeminian.github.io/CouchPilot-Pages/faq.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FAQ — CouchPilot">
+<meta property="og:description" content="Connection, pairing, wake, privacy, supported TVs, and troubleshooting.">
+<meta property="og:url" content="https://hugozeminian.github.io/CouchPilot-Pages/faq.html">
+<meta property="og:image" content="favicon.svg">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+
+<main id="main">
+  <section class="page-head"><div class="wrap">
+    <span class="eyebrow">Help</span>
+    <h1>Frequently asked questions</h1>
+    <p class="lead">Everything about connecting, compatibility, privacy, and troubleshooting. Still stuck? <a href="support.html">Contact support</a>.</p>
+  </div></section>
+
+  <section class="section"><div class="wrap" style="max-width:820px">
+    <h2>Compatibility</h2>
+    <details class="faq"><summary>Does CouchPilot work with all TVs?</summary><div><p>No — and any remote that claims to is overpromising. CouchPilot works best with <strong>LG webOS</strong> TVs and has <strong>experimental</strong> support for <strong>Samsung (Tizen)</strong>. Support depends on your TV's operating system and model, not just the brand. See <a href="supported-devices.html">Supported Devices</a>.</p></div></details>
+    <details class="faq"><summary>Why does my Samsung TV show only "popular apps" instead of all my apps?</summary><div><p>Samsung TVs from about 2020 onward don't let apps read the full installed-app list locally. So on Samsung, CouchPilot shows a curated set of popular apps and checks which ones your TV actually has before showing them — instead of guessing. On LG, the app can read your real list, so LG shows everything.</p></div></details>
+    <details class="faq"><summary>Why do Android TV and Roku say "planned"?</summary><div><p>They're in development or research and aren't selectable yet. We only turn on a system after it's been validated on real hardware — we'd rather say "not yet" than ship something that half-works.</p></div></details>
+    <details class="faq"><summary>Why do the apps, inputs, and features vary between TVs?</summary><div><p>Different TV systems expose different capabilities locally. CouchPilot shows <strong>only</strong> the features your specific TV actually supports — so you'll never see a dead button. A Samsung monitor, a Samsung TV, and an LG TV can each show a slightly different set of controls.</p></div></details>
+
+    <h2>Connection &amp; pairing</h2>
+    <details class="faq"><summary>How do I pair my TV?</summary><div><p>Make sure your phone and TV are on the same Wi-Fi, open CouchPilot, and add your TV. On LG, the TV shows an on-screen prompt to allow the connection — accept it once and CouchPilot remembers it. On Samsung, accept the on-screen "Allow" prompt.</p></div></details>
+    <details class="faq"><summary>My phone and TV are on the same Wi-Fi but it still won't connect.</summary><div><p>Check that they're on the same network band/SSID — some routers separate 2.4&nbsp;GHz and 5&nbsp;GHz or have a "guest" network that blocks device-to-device traffic. Confirm the TV is on, and that any "only allow known devices" setting on the TV isn't blocking the pairing. If it still fails, send a report from <strong>Compatibility &amp; feedback</strong> with your TV model.</p></div></details>
+    <details class="faq"><summary>Does it reconnect automatically?</summary><div><p>Yes. Pair once and CouchPilot reconnects on its own the next time you open it, as long as the TV is on and on the same Wi-Fi — no repeated prompts.</p></div></details>
+
+    <h2>Wake &amp; power</h2>
+    <details class="faq"><summary>Why can "Wake TV" sometimes fail?</summary><div><p>Waking a TV over Wi-Fi (Wake-on-LAN) depends on the TV's own settings and how it sleeps. Some TVs need a setting enabled (for example Samsung's "Power On with Mobile"), some only wake from a lighter standby, and some drop off Wi-Fi entirely when off. When wake doesn't work it's usually a TV setting rather than a bug — the app keeps trying for a bounded window and then tells you honestly.</p></div></details>
+
+    <h2>Network &amp; permissions</h2>
+    <details class="faq"><summary>Why does the app ask for Local Network permission?</summary><div><p>That permission is the whole app. CouchPilot finds and talks to your TV over your home Wi-Fi; iOS requires your explicit permission for an app to reach other devices on your network. Without it, the app can't connect to your TV. It is not used for anything else.</p></div></details>
+    <details class="faq"><summary>Does CouchPilot need SmartThings, a Samsung account, or any cloud service?</summary><div><p>No. CouchPilot never uses SmartThings, cloud control, or any account. Everything happens locally between your phone and your TV.</p></div></details>
+
+    <h2>Multiple TVs, favorites &amp; inputs</h2>
+    <details class="faq"><summary>Can I control more than one TV?</summary><div><p>Yes. My Devices saves every TV in your home. Switch between them in a tap; the active one connects automatically. You can remove any device — that only forgets it on your phone.</p></div></details>
+    <details class="faq"><summary>How do favorites work?</summary><div><p>Pin the apps you use most so they're one tap away. On LG these come from your real installed apps; on Samsung they come from the curated popular-apps set that your TV actually has.</p></div></details>
+    <details class="faq"><summary>Can I switch inputs / sources?</summary><div><p>On LG, yes — pick from your inputs. On Samsung, CouchPilot opens the TV's Source picker (Samsung doesn't expose direct input switching locally).</p></div></details>
+
+    <h2>Privacy</h2>
+    <details class="faq"><summary>Does CouchPilot track me?</summary><div><p>No. There is no analytics, no advertising, and no server that records what you do. Feedback is sent only when you choose to send it, and you see the exact contents first. See the <a href="privacy.html">privacy policy</a>.</p></div></details>
+    <details class="faq"><summary>Is CouchPilot free? Are there ads?</summary><div><p>Yes, it's free, and there are no ads. Any future paid features would be optional extras — the core remote stays free, and the no-ads, no-tracking, no-account promise doesn't change.</p></div></details>
+
+    <h2>Known limitations</h2>
+    <details class="faq"><summary>What are the current limits?</summary><div><p>Samsung support is experimental and varies by model. Some Samsung features (like real-time volume readback or standby wake) depend on model and settings. Android TV, Roku and other platforms aren't available yet. Streaming sticks generally can't control TV volume. We keep this honest — see <a href="supported-devices.html">Supported Devices</a>.</p></div></details>
+  </div></section>
+
+  <noscript><nav class="wrap" aria-label="Site" style="padding:1rem 0"><a href="index.html">Home</a> · <a href="supported-devices.html">Supported Devices</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></nav></noscript>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

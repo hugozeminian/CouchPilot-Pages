@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hugozeminian.github.io/CouchPilot-Pages/sitemap.xml
